@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: madass-lead-engine
+    runtime: docker
+    plan: free
+    envVars:
+      - key: PORT
+        value: "5000"
+      - key: DATA_DIR
+        value: "/app/data"
